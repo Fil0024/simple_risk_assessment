@@ -1,6 +1,3 @@
-"""
-Główny skrypt do konfiguracji i uruchomienia analizy.
-"""
 from risk_functions import fetch_data, compute_log_returns, compute_historical_var, plot_returns_with_var
 
 
