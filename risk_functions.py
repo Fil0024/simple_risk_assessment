@@ -1,6 +1,3 @@
-"""
-Moduł funkcji do pobierania danych, obliczania zwrotów i VaR oraz rysowania wykresów.
-"""
 import yfinance as yf
 import pandas as pd
 import numpy as np
@@ -28,12 +25,7 @@ def compute_historical_var(returns_df, level=0.05):
 
 
 def plot_returns_with_var(returns_df, var_series, level=0.05, mode='combined'):
-    """
-    Rysuje histogram i KDE zwrotów z linią VaR.
-    mode: 'separate' — osobne okna dla każdego tickera
-          'subplots' — jedno okno, wiele wykresów
-          'combined' — wszystkie zwroty na jednym wykresie
-    """
+
     tickers = returns_df.columns
 
     if mode == 'separate':
